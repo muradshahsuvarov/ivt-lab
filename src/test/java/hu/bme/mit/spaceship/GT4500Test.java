@@ -97,18 +97,6 @@ public class GT4500Test {
   
   }
   
-  @Test
-  public void allStoreFailure(){
-    // Arrange
-    when(mock_1.fire(1)).thenReturn(false);
-    when(mock_2.fire(1)).thenReturn(false);
-    // Act
-    boolean results = ship.fireTorpedo(FiringMode.ALL);
-
-    // Assert
-    assertEquals(false, results);
-
-  }
   
   @Test
   public void firstStoreFailure(){
